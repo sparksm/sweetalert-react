@@ -20,7 +20,7 @@
     "version": "npm run build",
     "postversion": "git push && git push --tags && npm run clean",
     "prepublish": "npm run clean && npm run build",
-    "postinstall": "node -e \"require('fs').mkdirSync('./lib', function (e) { process.exit(e ? 1 : 0) })\" || npm run build"
+    "postinstall": "node -e \"require('fs').mkdirSync('lib', function (e) { process.exit(e ? 1 : 0) })\" || npm run build"
   },
   "author": {
     "name": "C.T. Lin",
